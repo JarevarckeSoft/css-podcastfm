@@ -1,0 +1,12 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.estadisticas {
+	h2 {
+		@include m.headingBorder(v.$secundario, v.$primario);
+	}
+
+	.imagen-estadisticas {
+		box-shadow: 6px 4px 35px -6px rgba(0 0 0 / 0.65);
+	}
+}
