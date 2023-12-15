@@ -19,7 +19,6 @@
 	
 	@include m.tablet {
 		flex-direction: row;
-		max-width: 80rem;
 		margin-inline: auto;
 		margin-block-start: 10rem;
 	}
@@ -31,12 +30,16 @@
 		border-bottom: 1px solid #e1e1e1;
 		@include m.tablet {
 			border: none;
+			max-width: calc(73rem / 3);
 			transition-property: transform;
 			transition-duration: 300ms;
 
 			&:hover {
 				transform: scale(1.1);
 			}
+		}
+		@include m.tablet2 {
+			max-width: 100%;
 		}
 
 		&.inicio {
